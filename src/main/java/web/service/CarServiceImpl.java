@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 @Component
 public class CarServiceImpl implements CarService {
 
-    private static List<Car> listCar = new ArrayList<>();
+    private static final List<Car> listCar = new ArrayList<>();//todo: прислушиваемся к IDE
 
     public CarServiceImpl() {
         listCar.add(new Car("BMW", "M5", 2010));

@@ -14,7 +14,7 @@ public class CarsController {
 
     @Autowired
     public CarsController(CarServiceImpl carService) {
-        this.CAR_SERVICE = carService;
+        CAR_SERVICE = carService;//todo: this.CAR_SERVICE -.. пугаете коллега
     }
 
     @GetMapping("/cars")
