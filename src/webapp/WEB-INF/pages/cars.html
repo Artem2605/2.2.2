@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Машины</title>
+</head>
+<body>
+<h1>Список машин</h1>
+<div>
+    <table border="3">
+        <tr>
+            <th>Компания</th>
+            <th>Модель</th>
+            <th>Год выпуска</th>
+        </tr>
+        <tr th:each="car: ${countCars}">
+            <td th:text=${car.getCompany}/>
+            <td th:text=${car.getModel}/>
+            <td th:text=${car.getYear}/>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
